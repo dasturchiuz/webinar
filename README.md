@@ -1,9 +1,7 @@
-<<<<<<< HEAD
 <p align="center">
     <a href="https://github.com/yiisoft" target="_blank">
         <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
     </a>
-<<<<<<< HEAD
     <h1 align="center">Yii 2 Basic Project Template</h1>
     <br>
 </p>
@@ -233,14 +231,3 @@ vendor/bin/codecept run functional,unit -- --coverage-html --coverage-xml
 ```
 
 You can see code coverage output under the `tests/_output` directory.
-=======
-    <h1 align="center">Alior.uz </h1>
-    <br>
-</p>
-
-ALIOR.UZ
->>>>>>> origin/master
-=======
-# vebinar
-dorobotka
->>>>>>> origin/master

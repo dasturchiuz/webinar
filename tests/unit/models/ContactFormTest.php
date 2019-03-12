@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<< HEAD
 namespace tests\unit\models;
-=======
-namespace tests\models;
->>>>>>> origin/master
 
 class ContactFormTest extends \Codeception\Test\Unit
 {

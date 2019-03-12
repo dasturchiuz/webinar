@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <div id="content-wrapper">
     <section id="contact" class="white">
 
@@ -22,37 +21,3 @@
 
     </section>
 </div>
-=======
-<?php
-
-/* @var $this yii\web\View */
-/* @var $name string */
-/* @var $message string */
-/* @var $exception Exception */
-
-use yii\helpers\Html;
-
-$this->title = $name;
-?>
-<section class="section-main bg padding-top-sm">
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title"><?= Html::encode($this->title) ?></h5>
-                    <div class="alert alert-danger">
-                        <?= nl2br(Html::encode($message)) ?>
-                    </div>
-                    <p class="card-text">
-                        Произошла ошибка выше, а веб-сервер обработки вашего запроса.
-                    </p>
-                    <p>Если вы считаете, что это ошибка сервера, свяжитесь с нами. Спасибо.</p>
-                     <a href="http://alior.uz" class="card-link">Главная</a>
-                </div>
-            </div> <!-- card.// -->
-        </div>
-    </div>
-</div>
-</section>
->>>>>>> origin/master

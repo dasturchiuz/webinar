@@ -13,11 +13,7 @@ use yii\base\Model;
  */
 class LoginForm extends Model
 {
-<<<<<<< HEAD
     public $login;
-=======
-    public $username;
->>>>>>> origin/master
     public $password;
     public $rememberMe = true;
 
@@ -30,15 +26,10 @@ class LoginForm extends Model
     public function rules()
     {
         return [
-<<<<<<< HEAD
             // login and password are both required
             [['login'], 'required', 'message' => 'Login maydoni to`ldirilmadi'],
             [['password'], 'required', 'message' => 'Parol maydoni to`ldirilmadi'],
 
-=======
-            // username and password are both required
-            [['username', 'password'], 'required'],
->>>>>>> origin/master
             // rememberMe must be a boolean value
             ['rememberMe', 'boolean'],
             // password is validated by validatePassword()
@@ -58,28 +49,9 @@ class LoginForm extends Model
         if (!$this->hasErrors()) {
             $user = $this->getUser();
 
-<<<<<<< HEAD
             if (!$user || !$user->validatePassword($this->password)) {
                 $this->addError($attribute, 'Login yoki parol xato.');
             }
-=======
-            if (empty($user->password_hash)) {
-                $this->addError($attribute, 'Кажется, вы не подтвердили свой адрес электронной почты или обратитесь к  администратору для полной активации');
-
-                return;
-            }
-
-            if (!$user || !$user->validatePassword($this->password)) {
-                $this->addError($attribute, 'Неверное имя пользователя или пароль.');
-                return;
-            }
-
-            if (!$user->uActive()) {
-                $this->addError($attribute, 'Вы пака не активированы. Обратитесь к администратору сайта для полной активации. ');
-                return;
-            }
-
->>>>>>> origin/master
         }
     }
 
@@ -103,11 +75,7 @@ class LoginForm extends Model
     public function getUser()
     {
         if ($this->_user === false) {
-<<<<<<< HEAD
             $this->_user = User::findByLogin($this->login);
-=======
-            $this->_user = User::findByUsername($this->username);
->>>>>>> origin/master
         }
 
         return $this->_user;

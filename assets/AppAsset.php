@@ -17,7 +17,6 @@ use yii\web\AssetBundle;
  */
 class AppAsset extends AssetBundle
 {
-<<<<<<< HEAD
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
@@ -29,43 +28,4 @@ class AppAsset extends AssetBundle
         'yii\web\YiiAsset',
         'yii\bootstrap\BootstrapAsset',
     ];
-=======
-
-    public $basePath = '@webroot';
-    public $baseUrl = '@web';
-
-    public $css = [
-        'css/site.css',
-        'css/bootstrapp.min.css',
-        'css/bootstrap-custom.css',
-        'css/uikit.css',
-        'css/responsive.css',
-        'fonts/fontawesome/css/fontawesome-all.min.css',
-        'plugins/fancybox/fancybox.min.css',
-        'plugins/owlcarousel/assets/owl.carousel.min.css',
-        'plugins/owlcarousel/assets/owl.theme.default.min.css',
-        'css/notifyMessage.min.css',
-    ];
-    public $js = [
-        //'js/jquery-3.3.1.min.js',
-        'js/jquery-migrate-1.4.1.min.js',
-        'js/pusher.min.js',
-        // 'js/InputSpinner.js',
-        'js/bootstrap.bundle.min.js',
-        'plugins/fancybox/fancybox.min.js',
-        'plugins/owlcarousel/owl.carousel.min.js',
-//        'js/InputSpinner.js',
-        'js/script.js',
-
-        'js/alior.js',
-        'js/notifyMessage.min.js',
-
-
-    ];
-    public $depends = [
-        'yii\web\YiiAsset',
-//        'yii\bootstrap\BootstrapAsset',
-    ];
-
->>>>>>> origin/master
 }

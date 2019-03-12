@@ -8,8 +8,4 @@ modules:
     enabled:
       - Asserts
       - Yii2:
-<<<<<<< HEAD
             part: [orm, email, fixtures]
-=======
-            part: [orm, email]
->>>>>>> origin/master

@@ -2,28 +2,18 @@
 
 namespace app\controllers;
 
-<<<<<<< HEAD
 use app\models\Article;
 use app\models\Category;
 use Yii;
 use yii\data\Pagination;
-=======
-use Yii;
->>>>>>> origin/master
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\Response;
 use yii\filters\VerbFilter;
-<<<<<<< HEAD
 use app\models\LoginForm;
 use app\models\ContactForm;
 
 
-=======
-//use app\models\LoginForm;
-use app\models\ContactForm;
-
->>>>>>> origin/master
 class SiteController extends Controller
 {
     /**
@@ -34,7 +24,6 @@ class SiteController extends Controller
         return [
             'access' => [
                 'class' => AccessControl::className(),
-<<<<<<< HEAD
                 'only' => ['freeview', 'logout'],
                 'rules' => [
                     /**
@@ -61,25 +50,12 @@ class SiteController extends Controller
                         'allow' => false,
                         'roles' => ['?'],
                     ],
-=======
-                'only' => ['logout'],
-                'rules' => [
-                    [
-                        'actions' => ['logout'],
-                        'allow' => true,
-                        'roles' => ['@'],
-                    ],
->>>>>>> origin/master
                 ],
             ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
-<<<<<<< HEAD
                     'logout' => ['post'],
-=======
-                    'logout' => ['get'],
->>>>>>> origin/master
                 ],
             ],
         ];
@@ -102,7 +78,6 @@ class SiteController extends Controller
     }
 
     /**
-<<<<<<< HEAD
      * KERAKLI SANADA KO`RINADIGAN SAHIFA ACTIONI
      * VIEW GA 'happy-halloween' FAYL YARATISH KERAK!!!
      */
@@ -115,15 +90,12 @@ class SiteController extends Controller
      */
 
     /**
-=======
->>>>>>> origin/master
      * Displays homepage.
      *
      * @return string
      */
     public function actionIndex()
     {
-<<<<<<< HEAD
         return $this->render('index');
     }
 
@@ -192,18 +164,6 @@ class SiteController extends Controller
             'categories' => $categories
         ]);
     }
-=======
-//        $model= new \app\models\User();
-//        $model->username="admin";
-//        $model->setPassword("142536a");
-//        $model->save(false);
-//        $auth=Yii::$app->authManager;
-//        $rol=$auth->getRole('super_admin');
-//        $auth->assign($rol, $model->getId());
-        return $this->render('index');
-    }
-
->>>>>>> origin/master
 
 
     /**
@@ -224,17 +184,5 @@ class SiteController extends Controller
         ]);
     }
 
-<<<<<<< HEAD
 
-=======
-    /**
-     * Displays about page.
-     *
-     * @return string
-     */
-    public function actionAbout()
-    {
-        return $this->render('about');
-    }
->>>>>>> origin/master
 }

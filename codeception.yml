@@ -12,10 +12,6 @@ modules:
     config:
         Yii2:
             configFile: 'config/test.php'
-<<<<<<< HEAD
-=======
-            cleanup: false
->>>>>>> origin/master
 
 # To enable code coverage:
 #coverage:

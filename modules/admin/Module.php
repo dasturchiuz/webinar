@@ -36,7 +36,7 @@ class Module extends \yii\base\Module
                         'allow' => true,
                         'matchCallback' => function($rule, $action)
                         {
-                            return !empty(Yii::$app->user->identity->isAdmin) ? Yii::$app->user->identity->isAdmin : false;
+                            return Yii::$app->user->identity->isAdmin;
                         }
                     ]
                 ]

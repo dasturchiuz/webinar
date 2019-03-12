@@ -2,10 +2,6 @@
 
 namespace app\models;
 
-<<<<<<< HEAD
-=======
-use Yii;
->>>>>>> origin/master
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
 use app\models\Category;
@@ -21,13 +17,8 @@ class CategorySearch extends Category
     public function rules()
     {
         return [
-<<<<<<< HEAD
             [['id'], 'integer'],
             [['title'], 'safe'],
-=======
-            [['id', 'parent_id', 'sort'], 'integer'],
-            [['name', 'code', 'slug', 'text', 'image'], 'safe'],
->>>>>>> origin/master
         ];
     }
 
@@ -68,21 +59,9 @@ class CategorySearch extends Category
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
-<<<<<<< HEAD
         ]);
 
         $query->andFilterWhere(['like', 'title', $this->title]);
-=======
-            'parent_id' => $this->parent_id,
-            'sort' => $this->sort,
-        ]);
-
-       $query->andFilterWhere(['like', 'name', $this->name]);
-//            ->andFilterWhere(['like', 'code', $this->code])
-//            ->andFilterWhere(['like', 'slug', $this->slug])
-//            ->andFilterWhere(['like', 'text', $this->text])
-//            ->andFilterWhere(['like', 'image', $this->image]);
->>>>>>> origin/master
 
         return $dataProvider;
     }
