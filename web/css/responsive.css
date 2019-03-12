@@ -1,0 +1,13 @@
+@media (max-width: 1200px) {
+  /* tablet devices */ }
+@media (max-width: 960px) {
+  /* small tablet devices */ }
+@media all and (max-width: 720px) {
+  /* mobile devices */
+  .brand-wrap .logo {
+    max-height: 30px;
+    width: auto; }
+  .brand-wrap .logo-text {
+    font-size: 24px; } }
+
+/*# sourceMappingURL=responsive.css.map */
